@@ -36,6 +36,15 @@
         label {
              margin: 5%;
         }
+
+        div {
+            
+        }
+
+        fieldset:focus {
+            outline: black;
+            border: 2px solid;
+        }
     </style>
   </head>
   <body>
@@ -61,18 +70,22 @@
           <label> Student ID : 
             <input type="number" name="studentid" id="studentid" required />
           </label><br/><br/>
+          <div>
           <label> Full Name :
             <input type="text" name="fname" id="fname" required />
           </label><br/><br/>
+          </div>
           <label> Date Of Birth :
             <input type="date" name="dob" id="dob" />
           </label><br/><br/>
           <label> Email :
             <input type="email" name="email" id="email" />
           </label><br/><br/>
+          <div>
           <label> Mobile Phone :
             <input type="text" name="mobilephone" id="mobilephone" />
           </label><br/><br/>
+          </div>
         </fieldset>
         <fieldset>
           <label> Grade Level :
@@ -106,11 +119,14 @@
           </label><br/><br/>
         </fieldset>
         <fieldset>
+          <div> 
           <label> Why do you want to join?
             <textarea name="about" id="about">
+            
               
             </textarea>
           </label><br/><br/>
+          </div>
         </fieldset>  
         <fieldset>
           <legend>Action Buttons</legend>
