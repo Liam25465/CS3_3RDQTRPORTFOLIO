@@ -76,24 +76,37 @@
         </fieldset>
         <fieldset>
           <label> Grade Level :
-            <input type="radio" name="grlvl" value="1" /> Grade 1
-            <input type="radio" name="grlvl" value="2" /> Grade 2
-            <input type="radio" name="grlvl" value="3" /> Grade 3
-            <input type="radio" name="grlvl" value="4" /> Grade 4
-            <input type="radio" name="grlvl" value="5" /> Grade 5
-            <input type="radio" name="grlvl" value="6" /> Grade 6
-            <input type="radio" name="grlvl" value="7" /> Grade 7
-            <input type="radio" name="grlvl" value="8" /> Grade 8
-            <input type="radio" name="grlvl" value="9" /> Grade 9
-            <input type="radio" name="grlvl" value="10" /> Grade 10
-            <input type="radio" name="grlvl" value="11" /> Grade 11
-            <input type="radio" name="grlvl" value="12" /> Grade 12
+            <select name="grlvl" id="grlvl">
+             <option value="1">Grade 1</option>
+             <option value="2">Grade 2</option>
+             <option value="3">Grade 3</option>
+             <option value="4">Grade 4</option>
+             <option value="5">Grade 5</option>
+             <option value="6">Grade 6</option>
+             <option value="7">Grade 7</option>
+             <option value="8">Grade 8</option>
+             <option value="9">Grade 9</option>
+             <option value="10">Grade 10</option>
+             <option value="11">Grade 11</option>
+             <option value="12">Grade 12</option>
+            </select>   
           </label><br/><br/>
-          <label> 
-            <input type="checkbox" name="dp" id="dp" value="true" /> 
-            Agree to Data Privacy Policy
+          <label> Intern/Extern
+            <input type="radio" name="internextern" value="Intern" /> Intern
+            <input type="radio" name="internextern" value="Extern" /> Extern
           </label><br/><br/>
-          <label> Tell Us About Yourself : 
+            <label> Preferred Organization/Club
+            <select name="grlvl" id="grlvl">
+             <option value="volant">Volant</option>
+             <option value="alianti">Alianti</option>
+             <option value="labuyo">Labuyo</option>
+             <option value="pallastro">Pallastro</option>
+             <option value="pendulum">Pendulum</option>
+            </select>   
+          </label><br/><br/>
+        </fieldset>
+        <fieldset>
+          <label> Why do you want to join?
             <textarea name="about" id="about">
               
             </textarea>
@@ -101,7 +114,7 @@
         </fieldset>  
         <fieldset>
           <legend>Action Buttons</legend>
-          <button type="submit"> Accept </button>
+          <button type="submit"> Submit </button>
           <input type="reset" value=" Clear " />
         </fieldset> 
       </form>
